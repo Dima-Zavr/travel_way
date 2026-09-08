@@ -1,0 +1,125 @@
+.application {
+    padding: 100px 10%;
+    background-color: #1e88e5;
+}
+
+.application__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.application__title {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.application__description {
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.application__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.application__input,
+.application__select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    font: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.application__input:focus,
+.application__select:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.15);
+}
+
+/* Обязательные поля */
+
+.application__input:required,
+.application__select:required {
+    border-left: 3px solid #1e88e5;
+}
+
+/* Корректно заполненные поля */
+
+.application__input:valid,
+.application__select:valid {
+    border-color: #22c55e;
+}
+
+/* Некорректно заполненные поля */
+
+.application__input:invalid:not(:placeholder-shown) {
+    border-color: #ef4444;
+}
+
+.application__select:invalid {
+    border-color: #ef4444;
+}
+
+/* Кнопка */
+
+:default {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e88e5;
+    color: #ffffff;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.application__button:hover {
+    background-color: #1976d2;
+}
+
+.application__button:active {
+    transform: scale(0.98);
+}
+
+.application__button:focus {
+    outline: 3px solid rgba(30, 136, 229, 0.3);
+}
+
+/* Адаптивность */
+
+@media (max-width: 900px) {
+    .application__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .application {
+        padding: 70px 20px;
+    }
+
+    .application__title {
+        font-size: 30px;
+    }
+
+    .application__form {
+        padding: 20px;
+    }
+}

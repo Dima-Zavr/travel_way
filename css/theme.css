@@ -1,0 +1,10 @@
+:root {
+    --primaryColor: #1E88E5;
+    --accentColor: #00BFA6;
+    --bgColor: #F7F9FC;
+    --fontColor: #1F2937;
+
+    --mediaLarge: "(max-width: 1019px)";
+    --mediaMedium: "(max-width: 769px)";
+    --mediaSmall: "(max-width: 426px)";
+}
