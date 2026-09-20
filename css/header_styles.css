@@ -60,13 +60,13 @@
 .header__button {
     padding: 12px 20px;
     border-radius: 8px;
-    background-color: #1e88e5;
+    background-color: var(--primaryColor);
     color: #ffffff;
     text-decoration: none;
 }
 
 .header__button:hover {
-    background-color: #1976d2;
+    background-color: var(--hoverColor);
 }
 
 @media (max-width: 700px) {

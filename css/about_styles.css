@@ -1,6 +1,6 @@
 .about {
     padding: 100px 10%;
-    background-color: #f7f9fc;
+    background-color: var(--bgColor);
 }
 
 .about__container {
@@ -12,20 +12,19 @@
     margin: 0 auto;
 }
 
-.about__subtitle {
-    margin-bottom: 10px;
-    color: #1e88e5;
-}
-
 .about__title {
     margin-bottom: 20px;
     font-size: 42px;
     line-height: 1.2;
 }
 
-.about__description {
+.about__subtitle {
+    margin-bottom: 10px;
+    color: var(--subTitleColor);
+}
+
+.about__text {
     margin-bottom: 15px;
-    color: #6b7280;
     line-height: 1.6;
 }
 
@@ -43,12 +42,12 @@
 .statistic__number {
     font-size: 26px;
     font-weight: 700;
-    color: #1e88e5;
+    color: var(--primaryColor);
 }
 
 .statistic__text {
     margin-top: 5px;
-    color: #6b7280;
+    color: var(--subTitleColor);
 }
 
 .about__image-wrapper {
@@ -71,7 +70,6 @@
     .about__image {
         height: 350px;
     }
-
 }
 
 @media (max-width: 500px) {
@@ -87,5 +85,4 @@
         flex-wrap: wrap;
         gap: 25px;
     }
-
 }

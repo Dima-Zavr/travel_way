@@ -1,26 +1,22 @@
 .destinations {
     padding: 100px 10%;
-    background-color: #f7f9fc;
+    background-color: var(--bgColor);
 }
 
 .destinations__container {
     max-width: 1200px;
     margin: 0 auto;
-
-    .destinations__title {
-        margin-bottom: 10px;
-        font-size: 36px;
-    }
-
-    >p {
-        margin-bottom: 40px;
-        color: #6b7280;
-    }
-
 }
 
+.destinations__title {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
 
-/* Вверху destinations__description */
+.destinations__description {
+    margin-bottom: 40px;
+    color: var(--subTitleColor);
+}
 
 .destinations__list {
     display: grid;

@@ -1,8 +1,10 @@
 :root {
     --primaryColor: #1E88E5;
+    --hoverColor: #1976d2;
     --accentColor: #00BFA6;
     --bgColor: #F7F9FC;
-    --fontColor: #1F2937;
+    --textColor: #1F2937;
+    --subTitleColor: #6b7280;
 
     --mediaLarge: "(max-width: 1019px)";
     --mediaMedium: "(max-width: 769px)";

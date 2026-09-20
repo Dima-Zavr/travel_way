@@ -26,7 +26,7 @@
 .footer__description {
     max-width: 350px;
     margin-top: 15px;
-    color: #9ca3af;
+    color: var(--subTitleColor);
     line-height: 1.6;
 }
 
@@ -43,11 +43,11 @@
 
 .footer__item {
     margin-bottom: 12px;
-    color: #9ca3af;
+    color: var(--subTitleColor);
 }
 
 .footer__link {
-    color: #9ca3af;
+    color: var(--subTitleColor);
     text-decoration: none;
 }
 
@@ -62,7 +62,7 @@
 
 .footer__copyright {
     margin: 0;
-    color: #9ca3af;
+    color: var(--subTitleColor);
     font-size: 14px;
 }
 

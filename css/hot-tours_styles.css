@@ -1,6 +1,6 @@
 .hot-tours {
     padding: 100px 10%;
-    background-color: #f7f9fc;
+    background-color: var(--bgColor);
 }
 
 .hot-tours__container {
@@ -15,7 +15,7 @@
 
 .hot-tours__description {
     margin-bottom: 40px;
-    color: #6b7280;
+    color: var(--subTitleColor);
 }
 
 .hot-tours__list {
@@ -49,7 +49,7 @@
 
 .tour-card__info {
     margin-bottom: 20px;
-    color: #6b7280;
+    color: var(--subTitleColor);
 }
 
 .tour-card__prices {
@@ -60,27 +60,27 @@
 }
 
 .tour-card__old-price {
-    color: #9ca3af;
+    color: var(--subTitleColor);
     text-decoration: line-through;
 }
 
 .tour-card__price {
     font-size: 20px;
     font-weight: 600;
-    color: #1e88e5;
+    color: var(--primaryColor);
 }
 
 .tour-card__button {
     display: inline-block;
     padding: 12px 20px;
     border-radius: 8px;
-    background-color: #1e88e5;
+    background-color: var(--primaryColor);
     color: #ffffff;
     text-decoration: none;
 }
 
 .tour-card__button:hover {
-    background-color: #1976d2;
+    background-color: var(--hoverColor);
 }
 
 @media (max-width: 900px) {
