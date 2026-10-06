@@ -1,5 +1,6 @@
 .reviews {
     padding: 100px 10%;
+    background-color: var(--bgColor);
 }
 
 .reviews__container {
@@ -26,7 +27,7 @@
 .review-card {
     padding: 30px;
     border-radius: 12px;
-    background-color: var(--bgColor);
+    background-color: #ffffff;
 }
 
 .review-card__rating {
@@ -39,6 +40,8 @@
     position: relative;
     margin-bottom: 25px;
     line-height: 1.6;
+    text-align: left;
+    text-indent: 16px;
     color: var(--subTitleColor);
 }
 

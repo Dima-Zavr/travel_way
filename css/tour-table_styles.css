@@ -1,0 +1,88 @@
+.tour-table {
+    padding: 100px 10%;
+    background-color: #ffffff;
+}
+
+.tour-table__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-table__title {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.tour-table__description {
+    margin-bottom: 40px;
+    color: var(--subTitleColor);
+}
+
+.tour-table__wrapper {
+    overflow-x: auto;
+}
+
+.tour-table__table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    background-color: var(--bgColor);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tour-table__caption {
+    padding: 15px;
+
+    caption-side: top;
+
+    color: var(--subTitleColor);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.tour-table__table th,
+.tour-table__table td {
+    padding: 18px 20px;
+    text-align: left;
+    border: 1px solid #e5e7eb;
+}
+
+.tour-table__table th {
+    background-color: var(--primaryColor);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tour-table__table td {
+    color: #4b5563;
+}
+
+.tour-table__table {
+    empty-cells: show;
+}
+
+.tour-table__table tbody tr:hover {
+    background-color: #eef6fd;
+}
+
+.tour-table__table td:last-child {
+    color: var(--primaryColor);
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .tour-table {
+        padding: 70px 20px;
+    }
+
+    .tour-table__title {
+        font-size: 30px;
+    }
+
+    .tour-table__table {
+        min-width: 650px;
+    }
+}

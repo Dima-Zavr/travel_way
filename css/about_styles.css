@@ -1,6 +1,5 @@
 .about {
     padding: 100px 10%;
-    background-color: var(--bgColor);
 }
 
 .about__container {
@@ -13,12 +12,16 @@
 }
 
 .about__title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 42px;
     line-height: 1.2;
 }
 
 .about__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    font-style: italic;
     margin-bottom: 10px;
     color: var(--subTitleColor);
 }

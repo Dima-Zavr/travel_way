@@ -45,6 +45,7 @@
 .tour-card__title {
     margin-bottom: 10px;
     font-size: 22px;
+    text-transform: uppercase;
 }
 
 .tour-card__info {

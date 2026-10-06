@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/destinations_styles.css" />
         <link rel="stylesheet" href="css/advantages_styles.css" />
         <link rel="stylesheet" href="css/hot-tours_styles.css" />
+        <link rel="stylesheet" href="css/tour-table_styles.css" />
         <link rel="stylesheet" href="css/how-it-work_styles.css" />
         <link rel="stylesheet" href="css/about_styles.css" />
         <link rel="stylesheet" href="css/reviews_styles.css" />
@@ -198,45 +199,93 @@
             </div>
         </section>
 
+        <section class="tour-table">
+            <div class="tour-table__container">
+                <h2 class="tour-table__title">Сравнение туров</h2>
+
+                <p class="tour-table__description">Сравните популярные предложения и выберите подходящий вариант.</p>
+
+                <div class="tour-table__wrapper">
+                    <table class="tour-table__table">
+                        <caption class="tour-table__caption">
+                            Популярные туристические направления
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th>Направление</th>
+                                <th>Отель</th>
+                                <th>Длительность</th>
+                                <th>Питание</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Турция</td>
+                                <td>5★</td>
+                                <td>7 ночей</td>
+                                <td>All Inclusive</td>
+                                <td>49 900 ₽</td>
+                            </tr>
+
+                            <tr>
+                                <td>ОАЭ</td>
+                                <td>4★</td>
+                                <td>6 ночей</td>
+                                <td>Завтрак</td>
+                                <td>72 500 ₽</td>
+                            </tr>
+
+                            <tr>
+                                <td>Мальдивы</td>
+                                <td>5★</td>
+                                <td>7 ночей</td>
+                                <td>Завтрак</td>
+                                <td>119 900 ₽</td>
+                            </tr>
+
+                            <tr>
+                                <td>Италия</td>
+                                <td>4★</td>
+                                <td>8 ночей</td>
+                                <td></td>
+                                <td>74 900 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
         <section class="how-it-works">
             <div class="how-it-works__container">
                 <h2 class="how-it-works__title">Как это работает</h2>
 
                 <p class="how-it-works__description">Организовать путешествие проще, чем кажется.</p>
 
-                <div class="how-it-works__list">
-                    <article class="step-card">
-                        <span class="step-card__number">01</span>
-
+                <ol class="how-it-works__list">
+                    <li class="step-card">
                         <h3 class="step-card__title">Выберите направление</h3>
-
                         <p class="step-card__description">Найдите страну, которую хотите посетить.</p>
-                    </article>
+                    </li>
 
-                    <article class="step-card">
-                        <span class="step-card__number">02</span>
-
+                    <li class="step-card">
                         <h3 class="step-card__title">Выберите тур</h3>
-
                         <p class="step-card__description">Мы поможем подобрать подходящий вариант.</p>
-                    </article>
+                    </li>
 
-                    <article class="step-card">
-                        <span class="step-card__number">03</span>
-
+                    <li class="step-card">
                         <h3 class="step-card__title">Забронируйте</h3>
-
                         <p class="step-card__description">Оставьте заявку и подтвердите бронирование.</p>
-                    </article>
+                    </li>
 
-                    <article class="step-card">
-                        <span class="step-card__number">04</span>
-
+                    <li class="step-card">
                         <h3 class="step-card__title">Отправляйтесь в путешествие</h3>
-
                         <p class="step-card__description">Наслаждайтесь отдыхом и новыми впечатлениями.</p>
-                    </article>
-                </div>
+                    </li>
+                </ol>
             </div>
         </section>
 
@@ -244,7 +293,7 @@
             <div class="about__container">
                 <div class="about__content">
                     <h2 class="about__title">О компании</h2>
-                    
+
                     <p class="about__subtitle">Путешествия — это больше, чем просто отдых</p>
 
                     <p class="about__text">
