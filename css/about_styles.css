@@ -12,27 +12,46 @@
     overflow: auto;
 }
 
-.about__subtitle {
+.about__title {
     margin-bottom: 10px;
-    color: var(--primaryColor);
+    font-size: 36px;
 }
 
-.about__title {
-    margin-bottom: 20px;
-    font-size: 42px;
-    line-height: 1.2;
+.about__subtitle {
+    margin-bottom: 10px;
+    color: var(--subtitleColor);
+}
+
+.about__image-wrapper {
+    /* Плавающий внешний блок: текст обтекает изображение справа. */
+    float: left;
+    position: relative;
+    display: block;
+    width: 45%;
+    margin: 0 40px 20px 0;
 }
 
 .about__image {
-    float: left;
-
-    width: 45%;
+    display: block;
+    width: 100%;
     height: 350px;
-
-    margin: 0 40px 20px 0;
-
     border-radius: 12px;
     object-fit: cover;
+}
+
+/* Вложенный блок позиционируется относительно .about__image-wrapper. */
+.about__image-label {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: inline-block;
+    max-width: calc(100% - 24px);
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: rgba(31, 41, 55, 0.88);
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 .about__description {
@@ -64,12 +83,9 @@
 }
 
 @media (max-width: 700px) {
-    .about__image {
+    .about__image-wrapper {
         float: none;
-
         width: 100%;
-        height: 350px;
-
         margin: 0 0 30px;
     }
 }
