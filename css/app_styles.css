@@ -83,23 +83,9 @@
     padding: 14px;
     border: none;
     border-radius: 8px;
-    background-color: var(--primaryColor);
     color: #ffffff;
     font: inherit;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-}
-
-.application__button:hover {
-    background-color: var(--hoverColor);
-}
-
-.application__button:active {
-    transform: scale(0.98);
-}
-
-.application__button:focus {
-    outline: 3px solid rgba(30, 136, 229, 0.3);
 }
 
 /* Адаптивность */

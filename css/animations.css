@@ -1,0 +1,161 @@
+/* Появление элемента снизу вверх */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Появление элемента сверху вниз */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Плавное появление */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Плавающее движение */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Главный экран */
+.hero__subtitle {
+    animation: fadeInUp 0.8s ease both;
+}
+
+.hero__title {
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.hero__description {
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.hero__button {
+    animation: fadeInUp 0.8s ease 0.6s backwards;
+}
+
+/* Шапка сайта */
+.header__logo {
+    animation: fadeIn 0.8s ease both;
+}
+
+.header__nav {
+    animation: fadeInDown 0.8s ease 0.2s both;
+}
+
+.header__button {
+    animation: fadeIn 0.8s ease 0.4s both;
+}
+
+/* Карточки популярный направлений */
+.destination-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card__image {
+    transition: transform 0.5s ease;
+}
+
+.destination-card:hover .destination-card__image {
+    transform: scale(1.05);
+}
+
+/* Преимущества компании */
+.advantage-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.advantage-card__icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Горящие туры */
+.tour-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card__image {
+    transition: transform 0.5s ease;
+}
+
+.tour-card:hover .tour-card__image {
+    transform: scale(1.05);
+}
+
+/* Отзывы клиентов */
+.review-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Кнопки */
+.hero__button,
+.header__button,
+.tour-card__button,
+.application__button {
+    background-color: var(--primaryColor);
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.hero__button:hover,
+.header__button:hover,
+.tour-card__button:hover,
+.application__button:hover {
+    background-color: var(--hoverColor);
+    transform: translateY(-3px);
+}
+
+.hero__button:active,
+.header__button:active,
+.tour-card__button:active,
+.application__button:active {
+    transform: scale(0.97);
+}
