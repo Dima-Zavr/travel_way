@@ -18,12 +18,22 @@
 }
 
 .advantages__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .advantage-card {
+    /* Определяем начальную ширину карточки */
+    flex-basis: 220px;
+
+    /* Разрешаем карточкам увеличиваться */
+    flex-grow: 1;
+
+    /* Разрешаем карточкам уменьшаться */
+    flex-shrink: 1;
+
+    box-sizing: border-box;
     padding: 30px;
     border-radius: 12px;
     background-color: var(--bgColor);

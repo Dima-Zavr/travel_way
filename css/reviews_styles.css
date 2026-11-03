@@ -59,7 +59,7 @@
 
 .review-card__author {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
 }
 
 .review-card__name {
