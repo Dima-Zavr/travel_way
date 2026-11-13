@@ -21,7 +21,7 @@
 .destinations__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-column-gap: 20px;
 }
 
 .destination-card {
@@ -77,4 +77,28 @@
     .destinations__title {
         font-size: 30px;
     }
+}
+/* Карточка Мальдив ведёт на отдельную страницу направления. */
+.destination-card--link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.destination-card--link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(31, 41, 55, 0.14);
+}
+
+.destination-card__more {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--primaryColor);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.destination-card:nth-child(even).destination-card--link .destination-card__more {
+    color: #ffffff;
 }

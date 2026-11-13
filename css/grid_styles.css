@@ -1,0 +1,483 @@
+.destination-page {
+    background: #fff;
+    color: #1f2937;
+}
+
+.destination-header {
+    position: absolute;
+}
+
+.destination-hero {
+    min-height: 680px;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(24px, 1fr) minmax(0, 1200px) minmax(24px, 1fr);
+    align-items: center;
+    color: #fff;
+    background: #123d4c url('../images/maldives.jpg') center 48%/cover no-repeat;
+}
+
+.destination-hero__shade {
+    grid-area: 1 / 1 / 2 / 4;
+    align-self: stretch;
+    background: linear-gradient(90deg, #051c2bd1, rgba(5, 28, 43, .25));
+}
+
+.destination-hero__content {
+    grid-area: 1 / 2 / 2 / 3;
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    padding: 150px 0 90px;
+}
+
+.destination-hero__back {
+    display: inline-block;
+    margin-bottom: 42px;
+    color: #fff;
+    opacity: .9;
+}
+
+.destination-hero__eyebrow,
+.section-kicker {
+    margin-bottom: 12px;
+    color: #00bfa6;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.destination-hero h1 {
+    margin-bottom: 20px;
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1;
+}
+
+.destination-hero__lead {
+    max-width: 570px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, .9);
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.destination-hero__button {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 8px;
+    background: #00bfa6;
+    color: #fff;
+    font-weight: 700;
+    transition: background .2s, transform .2s;
+}
+
+.destination-hero__button:hover {
+    background: #009f8c;
+    transform: translateY(-2px);
+}
+
+.destination-hero__label {
+    position: absolute;
+    right: 5%;
+    bottom: 35px;
+    color: rgba(255, 255, 255, .8);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.section-shell {
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.destination-intro {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-heading h2,
+.offer-section h2 {
+    margin-bottom: 20px;
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.2;
+}
+
+.section-heading>p:last-child {
+    color: #6b7280;
+    line-height: 1.8;
+}
+
+.intro-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(120px, auto));
+    gap: 14px;
+}
+
+.fact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 22px;
+    border: 1px solid #e5edf1;
+    border-radius: 14px;
+    background: #f7f9fc;
+}
+
+.fact-card--large {
+    grid-row: 1 / 3;
+    background: #e8f8f5;
+}
+
+.fact-card__icon {
+    color: #00a991;
+    font-size: 25px;
+}
+
+.fact-card strong {
+    font-size: 20px;
+}
+
+.fact-card span:last-child {
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.experiences-section {
+    padding: 90px 0 105px;
+    background: #f7f9fc;
+}
+
+.section-heading--center {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+/* GRID CONTAINER + ИМЕНОВАННЫЕ ЛИНИИ: линии получают имена и далее используются в позиционировании карточек. */
+.experience-grid {
+    display: grid;
+    grid-template-columns: [grid-start] 1.15fr [middle-line] .85fr [grid-end];
+    grid-template-rows: [row-top] 250px [row-middle] 230px [row-bottom];
+    gap: 18px;
+    position: relative;
+}
+
+.experience-card {
+    position: relative;
+    overflow: hidden;
+    min-width: 0;
+    border-radius: 16px;
+    background: #dbe8ec;
+}
+
+.experience-card::after {
+    content: "";
+    position: absolute;
+    inset: 25% 0 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .75));
+}
+
+.experience-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .4s;
+}
+
+.experience-card:hover img {
+    transform: scale(1.04);
+}
+
+.experience-card__caption {
+    position: absolute;
+    z-index: 1;
+    right: 24px;
+    bottom: 22px;
+    left: 24px;
+    color: #fff;
+}
+
+.experience-card__caption span {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.experience-card__caption h3 {
+    margin: 8px 0;
+    font-size: 23px;
+}
+
+.experience-card__caption p {
+    max-width: 400px;
+    color: rgba(255, 255, 255, .85);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Позиционирование по именованным линиям и через grid-area. */
+.experience-card--lagoon {
+    grid-column-start: grid-start;
+    grid-column-end: middle-line;
+    grid-row-start: row-top;
+    grid-row-end: row-bottom;
+}
+
+.experience-card--diving {
+    grid-area: row-top / middle-line / row-middle / grid-end;
+}
+
+.experience-card--villas {
+    grid-area: row-middle / middle-line / row-bottom / grid-end;
+}
+
+.experience-card--cruise {
+    display: none;
+}
+
+/* Наложение: бейдж и основная карточка занимают одну и ту же grid-area. */
+.experience-stamp {
+    grid-area: row-top / grid-start / row-top / middle-line;
+    justify-self: end;
+    align-self: start;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin: 18px;
+    padding: 17px 20px;
+    border: 1px solid rgba(255, 255, 255, .65);
+    border-radius: 12px;
+    background: rgba(0, 74, 85, .72);
+    color: #fff;
+    text-align: right;
+    backdrop-filter: blur(8px);
+}
+
+.experience-stamp span,
+.experience-stamp small {
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.experience-stamp strong {
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+.trip-section {
+    padding-top: 100px;
+    padding-bottom: 105px;
+}
+
+.trip-section .section-heading {
+    max-width: 650px;
+    margin-bottom: 38px;
+}
+
+/* grid-auto-flow управляет заполнением сетки по строкам; dense заполняет свободные ячейки. */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-flow: row dense;
+    gap: 14px;
+}
+
+.trip-day {
+    display: grid;
+    grid-template-columns: 48px 1fr auto;
+    align-items: center;
+    gap: 15px;
+    min-height: 105px;
+    padding: 18px;
+    border: 1px solid #e6edf1;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.trip-day__number {
+    color: #00a991;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.trip-day h3 {
+    margin-bottom: 6px;
+    font-size: 17px;
+}
+
+.trip-day p {
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.trip-day--highlight {
+    order: -1;
+    border-color: #b6e9df;
+    background: #effbf8;
+}
+
+.trip-day__tag {
+    padding: 6px 9px;
+    border-radius: 20px;
+    background: #d7f5ee;
+    color: #087f70;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.offer-section {
+    padding: 65px 24px;
+    background: #eaf8f5;
+}
+
+.offer-section__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    width: min(1120px, 100%);
+    margin: 0 auto;
+}
+
+.offer-section h2 {
+    margin-bottom: 10px;
+}
+
+.offer-section__inner>div>p:last-child {
+    max-width: 650px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+    .destination-hero {
+        min-height: 620px;
+    }
+
+    .destination-hero__content {
+        padding-top: 130px;
+    }
+
+    .destination-intro {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .experience-grid {
+        display: grid;
+        grid-template-areas:
+            "lagoon diving"
+            "lagoon villas";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 230px 210px;
+        gap: 12px;
+    }
+
+    .experience-card--lagoon {
+        grid-area: lagoon;
+    }
+
+    .experience-card--diving {
+        grid-area: diving;
+    }
+
+    .experience-card--villas {
+        grid-area: villas;
+    }
+
+    .experience-stamp {
+        grid-area: lagoon;
+        z-index: 1;
+    }
+
+    .trip-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-section__inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .destination-header .header__button {
+        display: none;
+    }
+
+    .destination-hero {
+        min-height: 590px;
+        grid-template-columns: 20px minmax(0, 1fr) 20px;
+    }
+
+    .destination-hero__content {
+        padding-bottom: 80px;
+    }
+
+    .destination-hero__lead {
+        font-size: 16px;
+    }
+
+    .destination-hero__label {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .intro-facts {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .fact-card {
+        padding: 15px;
+    }
+
+    .fact-card--large {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 190px 190px;
+    }
+
+    .experience-card--lagoon {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .experience-card--diving {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .experience-card--villas {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .experience-stamp {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .trip-day {
+        grid-template-columns: 38px 1fr;
+    }
+
+    .trip-day__tag {
+        grid-column: 2;
+        justify-self: start;
+    }
+}

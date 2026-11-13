@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/header_styles.css" />
+    <link rel="stylesheet" href="css/footer_styles.css" />
+    <link rel="stylesheet" href="css/grid_styles.css" />
+    <title>Мальдивы — TravelWay</title>
+</head>
+<body class="destination-page">
+    <header class="header destination-header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">TravelWay</a>
+            <nav class="header__nav">
+                <a href="index.html#destinations" class="header__link">Направления</a>
+                <a href="index.html#tours" class="header__link">Туры</a>
+                <a href="index.html#about" class="header__link">О компании</a>
+            </nav>
+            <a href="index.html#application" class="header__button">Подобрать тур</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="destination-hero">
+            <div class="destination-hero__shade"></div>
+            <div class="destination-hero__content">
+                <a class="destination-hero__back" href="index.html#destinations">← Все направления</a>
+                <p class="destination-hero__eyebrow">Экзотический отдых · Индийский океан</p>
+                <h1>Мальдивы</h1>
+                <p class="destination-hero__lead">Бирюзовая вода, белоснежные пляжи и виллы над океаном — путешествие, которое запомнится надолго.</p>
+                <a class="destination-hero__button" href="index.html#application">Оставить заявку</a>
+            </div>
+            <span class="destination-hero__label">Райский отдых начинается здесь</span>
+        </section>
+
+        <section class="destination-intro section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">Ваше путешествие</p>
+                <h2>Откройте для себя Мальдивы</h2>
+                <p>Архипелаг из сотен островов, где каждый день можно провести по-своему: отдыхать у океана, исследовать подводный мир или отправиться на морскую прогулку.</p>
+            </div>
+            <div class="intro-facts">
+                <article class="fact-card fact-card--large"><span class="fact-card__icon">☀</span><strong>+28…+30 °C</strong><span>Средняя температура воздуха</span></article>
+                <article class="fact-card"><span class="fact-card__icon">✈</span><strong>От 9 часов</strong><span>Время в пути с пересадкой</span></article>
+                <article class="fact-card"><span class="fact-card__icon">◷</span><strong>7–10 дней</strong><span>Рекомендуемая длительность</span></article>
+            </div>
+        </section>
+
+        <section class="experiences-section">
+            <div class="section-shell">
+                <div class="section-heading section-heading--center">
+                    <p class="section-kicker">Впечатления</p>
+                    <h2>Чем заняться на островах</h2>
+                    <p>Соберите свой идеальный отдых из впечатлений, которые подходят именно вам.</p>
+                </div>
+                <!-- GRID: именованные линии и grid-template-areas формируют журнальную раскладку карточек -->
+                <div class="experience-grid">
+                    <article class="experience-card experience-card--lagoon">
+                        <img src="images/maldives.jpg" alt="Бирюзовая лагуна и пляж на Мальдивах" />
+                        <div class="experience-card__caption"><span>01 / Пляжи</span><h3>Бирюзовые лагуны</h3><p>Проводите дни на пляже с мягким белым песком.</p></div>
+                    </article>
+                    <article class="experience-card experience-card--diving">
+                        <img src="images/img5.jpg" alt="Подводный мир и морская жизнь" />
+                        <div class="experience-card__caption"><span>02 / Море</span><h3>Снорклинг и дайвинг</h3><p>Познакомьтесь с красочным подводным миром.</p></div>
+                    </article>
+                    <article class="experience-card experience-card--villas">
+                        <img src="images/img6.jpg" alt="Тропический курорт среди пальм" />
+                        <div class="experience-card__caption"><span>03 / Комфорт</span><h3>Виллы у океана</h3><p>Насладитесь уединением и видом на закат.</p></div>
+                    </article>
+                    <article class="experience-card experience-card--cruise">
+                        <img src="images/img7.jpg" alt="Морская прогулка по островам" />
+                        <div class="experience-card__caption"><span>04 / Приключения</span><h3>Морские прогулки</h3><p>Откройте соседние острова и живописные бухты.</p></div>
+                    </article>
+                    <!-- Наложение: декоративный бейдж размещён в той же grid-area, что и большая фотография -->
+                    <div class="experience-stamp"><span>TravelWay</span><strong>Ваш остров<br />мечты</strong><small>Почувствуйте момент</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trip-section section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">Планирование</p>
+                <h2>Как может пройти ваше путешествие</h2>
+                <p>Пример программы на неделю — наполнение отдыха можно изменить при подборе тура.</p>
+            </div>
+            <!-- GRID: grid-auto-flow управляет автоматическим размещением, order меняет визуальный порядок карточек -->
+            <div class="trip-grid">
+                <article class="trip-day trip-day--highlight"><span class="trip-day__number">01</span><div><h3>Прибытие и отдых</h3><p>Трансфер на остров, размещение в отеле и знакомство с пляжем.</p></div><span class="trip-day__tag">Старт</span></article>
+                <article class="trip-day"><span class="trip-day__number">02</span><div><h3>Островной релакс</h3><p>Свободное время, бассейн и отдых у Индийского океана.</p></div></article>
+                <article class="trip-day"><span class="trip-day__number">03</span><div><h3>Морская экскурсия</h3><p>Прогулка на лодке и знакомство с соседними островами.</p></div></article>
+                <article class="trip-day"><span class="trip-day__number">04</span><div><h3>Подводный мир</h3><p>Снорклинг или дайвинг в сопровождении инструктора.</p></div></article>
+                <article class="trip-day"><span class="trip-day__number">05</span><div><h3>День для себя</h3><p>Спа, водные развлечения или неспешный отдых.</p></div></article>
+                <article class="trip-day"><span class="trip-day__number">06</span><div><h3>Закат в океане</h3><p>Романтическая прогулка и ужин с видом на океан.</p></div></article>
+                <article class="trip-day"><span class="trip-day__number">07</span><div><h3>Возвращение домой</h3><p>Завтрак, трансфер и дорога домой с яркими впечатлениями.</p></div></article>
+            </div>
+        </section>
+
+        <section class="offer-section">
+            <div class="offer-section__inner">
+                <div><p class="section-kicker">Пора в путешествие</p><h2>Мальдивы от 120 000 ₽</h2><p>Оставьте заявку — специалисты TravelWay помогут подобрать отель, перелёт и удобные даты.</p></div>
+                <a href="index.html#application" class="destination-hero__button">Подобрать тур</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand"><a href="index.html" class="footer__logo">TravelWay</a><p class="footer__description">Открывайте новые страны и создавайте незабываемые впечатления.</p></div>
+                <div class="footer__column"><h3 class="footer__title">Навигация</h3><ul class="footer__list"><li class="footer__item"><a href="index.html#destinations" class="footer__link">Направления</a></li><li class="footer__item"><a href="index.html#tours" class="footer__link">Туры</a></li></ul></div>
+                <div class="footer__column"><h3 class="footer__title">Контакты</h3><ul class="footer__list"><li class="footer__item"><a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a></li><li class="footer__item"><a href="mailto:info@travelway.ru" class="footer__link">info@travelway.ru</a></li></ul></div>
+            </div>
+            <div class="footer__bottom"><p class="footer__copyright">© 2026 TravelWay. Все права защищены.</p></div>
+        </div>
+    </footer>
+</body>
+</html>
